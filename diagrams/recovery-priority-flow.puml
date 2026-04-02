@@ -1,0 +1,51 @@
+@startuml
+title Recovery Priority Flow After a Cybersecurity Incident
+
+skinparam backgroundColor #FFFDFB
+skinparam shadowing false
+skinparam dpi 180
+skinparam roundcorner 30
+skinparam ArrowThickness 2
+
+skinparam activity {
+  BackgroundColor #E9F7FF
+  BorderColor #2E4A62
+  FontColor #162433
+  StartColor #7AE582
+  EndColor #FF6B6B
+  DiamondBackgroundColor #FFF1A8
+  DiamondBorderColor #B38900
+  DiamondFontColor #4D3B00
+}
+
+start
+
+#D9F0FF:Declare recovery phase\nafter containment\nand eradication;
+
+#CFF7D3:Validate backup integrity\nand confirm backup\nis safe to restore;
+
+if (Backup is trustworthy?) then (Yes)
+  #E3D0FF:Restore systems by\nbusiness priority;
+
+  fork
+    #BFE7FF:Priority 1\nCustomer authentication portals;
+  fork again
+    #FFD9B8:Priority 2\nPayment-related services\nand revenue-impacting systems;
+  fork again
+    #D4F5C6:Priority 3\nCore production databases;
+  fork again
+    #FFE1F0:Priority 4\nInternal development tools\nand lower-priority services;
+  end fork
+
+  #FFF0C8:Verify restored systems\nare secure,\nnot just functional;
+
+  #D9F8F2:Communicate status updates\nto stakeholders and clients;
+
+  #D7E8FF:Conduct lessons learned\nand update controls,\nrunbooks,\nand recovery priorities;
+
+else (No)
+  #FFD6D6:Escalate recovery issue,\nuse alternate recovery options,\nand reassess restoration plan;
+endif
+
+stop
+@enduml
