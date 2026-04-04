@@ -57,13 +57,14 @@ Contains PlantUML source files for colorful architecture and process diagrams.
 
 The case study uses the NIST CSF 2.0 core functions as the organizing structure:
 
+- **Govern**
 - **Identify**
 - **Protect**
 - **Detect**
 - **Respond**
 - **Recover**
 
-The case study also borrows the CSF profile mindset by describing a practical current-state view, a desired target-state view, and an improvement path.
+Governance supports the rest of the framework by setting priorities, accountability, and risk treatment direction. The case study also borrows the CSF profile mindset by describing a practical current-state view, a desired target-state view, and an improvement path.
 
 ## Intended audience
 
