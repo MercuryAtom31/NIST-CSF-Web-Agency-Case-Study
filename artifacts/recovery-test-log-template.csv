@@ -1,0 +1,4 @@
+Test ID,Test Date,Service/System,Recovery Priority Tier,RTO Target,RTO Actual,RPO Target,RPO Actual,Backup Source,Integrity Check Result,Security Validation Result,Test Outcome,Issues Found,Corrective Actions,Owner,Due Date,Retest Date,Status,Evidence Location
+REC-001,2026-04-01,Customer authentication portal,1,2h,1h45m,15m,10m,Isolated backup vault,Pass,Pass,Pass,None,None,Infrastructure Lead,2026-04-15,2026-07-01,Closed,docs/recovery-evidence.md
+REC-002,2026-04-01,Payment integration services,2,4h,3h20m,30m,25m,Isolated backup vault,Pass,Pass,Pass,None,None,Infrastructure Lead,2026-04-15,2026-07-01,Closed,docs/recovery-evidence.md
+REC-003,2026-04-01,Production database,3,6h,6h40m,30m,45m,Isolated backup vault,Pass,Pass,Conditional Pass,Restore performance exceeded target,Tune restore process and runbooks,Infrastructure Lead,2026-04-20,2026-05-10,Open,docs/recovery-evidence.md
