@@ -71,6 +71,17 @@ Likely and high-impact threats were selected based on the business context. Thes
 
 Each asset-threat pair was reviewed in terms of vulnerability, business impact, and likelihood. This was used to produce a practical risk register.
 
+### Risk rating method
+
+To keep the risk register consistent, the case study uses a simple qualitative scale:
+
+- impact is rated as low, medium, or high based on business disruption, privacy exposure, financial loss, or operational loss
+- likelihood is rated as low, medium, or high based on exposure, control maturity, and threat realism
+- inherent risk reflects the initial risk level before new controls are applied
+- residual risk reflects the expected level after the recommended controls are in place
+
+This keeps the register readable while still showing how risk treatment changes the exposure level.
+
 ### 5. Map controls to CSF outcomes
 
 Recommended controls were then aligned to CSF functions, categories, and selected subcategories. This helped show how the framework translates into operational action.

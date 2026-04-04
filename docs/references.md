@@ -11,6 +11,7 @@ https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters
 ## Related NIST guidance
 
 National Institute of Standards and Technology. (2012). *Guide for Conducting Risk Assessments* (SP 800-30 Rev. 1).
+https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf
 
 National Institute of Standards and Technology. (2020). *Security and Privacy Controls for Information Systems and Organizations* (SP 800-53 Rev. 5).  
 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
