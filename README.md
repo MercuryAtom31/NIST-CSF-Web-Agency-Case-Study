@@ -13,6 +13,8 @@ The project demonstrates how the organization can use the NIST CSF to:
 - detect and respond to cybersecurity incidents
 - recover after a cybersecurity incident
 
+The repository also includes supporting artifacts that make the work read more like a real GRC package, including a structured risk register, a CSF mapping table, scenario notes, methodology, and references.
+
 ## Why this project matters
 
 Modern web development firms handle valuable assets such as source code repositories, cloud databases, payment integrations, privileged API keys, and customer login systems. These assets are attractive to attackers and are also tied to privacy and compliance obligations.
@@ -46,7 +48,7 @@ The case study focuses on realistic threats that affect this type of organizatio
 Contains the main report and supporting written material.
 
 ### `artifacts/`
-Contains practical supporting material such as the risk register, scenario descriptions, and CSF mapping table.
+Contains practical supporting material such as the risk register, scenario descriptions, CSF mapping table, methodology, and references.
 
 ### `diagrams/`
 Contains PlantUML source files for colorful architecture and process diagrams.
