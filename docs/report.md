@@ -6,7 +6,7 @@ The NIST Cybersecurity Framework (CSF) 2.0 gives organizations a practical struc
 
 This report explains how a web development agency can use the CSF to improve its cybersecurity posture. The selected organization is a model firm named H&L Development (HLD), a Montreal-based web development agency specializing in custom enterprise applications, secure authentication portals, cloud-hosted systems, and e-commerce integrations.
 
-HLD operates in an environment where source code, login systems, cloud infrastructure, and personal information all play a central business role. As a result, the company faces threats such as account takeover, data exfiltration, ransomware, supply chain compromise, and leakage of privileged API secrets.
+HLD operates in an environment where source code, login systems, cloud infrastructure, and personal information all play a central business role. As a result, the company faces threats such as account takeover, data exfiltration, ransomware, supply chain compromise, and leakage of privileged API secrets. A practical risk process has to translate those threats into a register that captures inherent risk, current controls, treatment actions, residual risk, and review responsibility.
 
 This report shows how HLD can use the NIST CSF to identify its assets and risks, protect against threat actors, detect and respond to incidents, and recover after a cybersecurity event.
 
@@ -22,7 +22,7 @@ The third category includes source code repositories and software delivery pipel
 
 The fourth category includes third-party integrations and privileged secrets such as API keys. Modern web platforms often depend on cloud providers, payment services, analytics tools, identity services, and automation platforms. If a secret is exposed in code or logs, an attacker may be able to abuse cloud resources, access protected services, or create fraudulent transactions.
 
-Using the Identify function, HLD can build an asset inventory, map dependencies, and maintain a risk register. This process helps the company move from vague concern to concrete prioritization. It also supports regulatory awareness, since the organization must understand where sensitive and regulated information resides.
+Using the Identify function, HLD can build an asset inventory, map dependencies, and maintain a risk register. This process helps the company move from vague concern to concrete prioritization. It also supports regulatory awareness, since the organization must understand where sensitive and regulated information resides and who owns each risk treatment decision.
 
 ## 3. Protect Against Threat Actors
 
@@ -36,7 +36,7 @@ For source code and deployment pipelines, HLD should strengthen software platfor
 
 For API keys and service credentials, HLD should eliminate plaintext secrets from source code and local development environments. A centralized secret management service should be used instead. The organization should also scan code before commits or merges to detect exposed secrets early.
 
-These protections should be supported by clear policies and operational discipline. Security is stronger when protective controls are not left to personal habit but are instead embedded into the normal workflow of the organization.
+These protections should be supported by clear policies and operational discipline. Security is stronger when protective controls are not left to personal habit but are instead embedded into the normal workflow of the organization. In practice, that means the same controls should show up in both the narrative report and the risk register.
 
 ## 4. Detect and Respond to Cybersecurity Events
 
@@ -50,7 +50,7 @@ Once suspicious activity is detected, HLD should follow a formal incident respon
 
 Next comes containment. If an API key is exposed, the key should be revoked immediately. If an endpoint is under active abuse, malicious traffic should be blocked and affected systems isolated if needed. After containment, the organization works on eradication by removing malicious artifacts, patching vulnerabilities, or resetting compromised credentials.
 
-Communication is also part of response. Technical teams, management, legal stakeholders, and potentially affected clients must be informed in a timely and appropriate way. Documentation is essential throughout the process so that the organization can support investigation, reporting, and later improvement.
+Communication is also part of response. Technical teams, management, legal stakeholders, and potentially affected clients must be informed in a timely and appropriate way. Documentation is essential throughout the process so that the organization can support investigation, reporting, and later improvement. A well-run incident process should also update the treatment status of any related risks.
 
 ## 5. Recover After a Cybersecurity Incident
 
@@ -58,7 +58,7 @@ Recovery focuses on restoring operations in a safe, controlled, and business-awa
 
 For HLD, recovery should begin with a defined recovery plan supported by secure and regularly tested backups. Before restoration, backups should be validated so the organization does not restore corrupted or compromised data. Restoration should follow business priority. Customer authentication systems and payment-related services may need to return first because they have the most direct operational and financial impact.
 
-Recovery is not complete when systems are merely online again. They must return in a trusted state. That means verifying configurations, credentials, logs, and system integrity before declaring recovery complete.
+Recovery is not complete when systems are merely online again. They must return in a trusted state. That means verifying configurations, credentials, logs, and system integrity before declaring recovery complete. It also means revisiting whether the original risk level and treatment plan are still accurate.
 
 Communication also matters during recovery. Clients and internal stakeholders need clear updates about service status, expected timelines, and any known impacts. This supports trust and reduces confusion during a stressful period.
 
